@@ -1,0 +1,159 @@
+
+
+.container_statistics{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+
+    min-width: var(--min-page-width);
+    max-width: var(--min-page-width);
+
+}
+
+.filter_onoff{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_onoff div input[type=button]{
+    width: 100px;
+    height: 30px;
+}
+
+.filter_onoff div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filter_onoff div span:first-of-type{
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filter_row input[type=date]+ span, .filter_row input[type=text]+ span{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filter_row span:first-of-type + span{
+    padding-right: 10px;
+}
+
+input[type=text]{
+    padding: 0px   5px;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+input[type=date]:focus{
+    outline: none;
+}
+
+
+
+
+/*filter style: */
+.container_filter{
+
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.filter{
+    display: flex;
+
+
+}
+
+.filter_row{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* .filter_row input[type=checkbox]{
+
+} */
+.filter_row span:first-of-type{
+    margin-left: 10px;
+}
+.filter_column1 span:first-of-type{
+    min-width: 100px;
+
+}
+.filter_column1 filter_row span:first-of-type + span{
+    margin-left: 10px;
+
+}
+
+
+.filter_column2{
+    margin-left: 50px;
+}
+
+.filter_column2 span:first-of-type{
+    width: 150px;
+}
+
+.updateBtnContainer{
+    display: flex;
+}
+
+#updateButton{
+    width: 100px;
+    height: 30px;
+}
+
+
+.table_container_statistics{
+    margin-top: 10px;
+
+    max-height: 600px;
+    overflow-x: auto;
+}
+
+.table_statistics{
+
+    /*border-collapse: collapse;*/
+    border-spacing: 0;
+}
+
+.table_statistics thead{
+    position: sticky;
+    top: 0;
+    background-color: grey;
+}
+
+.table_statistics th{
+    border: 2px solid black;
+    padding: 1px 5px;
+    font-size: 14px;
+    
+}
+
+.table_statistics td{
+    border: 1px solid black;
+    background-color: white;
+    padding: 1px 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Стили для скролла */
+.table_container_statistics::-webkit-scrollbar {
+    width: 6px;
+}
+.table_container_statistics::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.table_container_statistics::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,3);
+}

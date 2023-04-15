@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+:root {
+    --min-page-width: 1270px;
+    --color-primary: #505F56;
+    --color-dark: #363f3a;
+    --color-text-1: black;
+  }
+
+
+
+  
+
+

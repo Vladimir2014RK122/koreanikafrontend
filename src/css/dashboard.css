@@ -1,0 +1,153 @@
+
+
+
+
+
+
+.system_info_container_external{
+    display: flex;
+    margin: 10px auto;
+
+    min-width: var(--min-page-width);
+    max-width: var(--min-page-width);
+
+}
+.system_info_container{
+    min-width: var(--min-page-width);
+    max-width: var(--min-page-width);
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.system_info_container > div{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    min-width: 400px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px  rgba(0,0,0,0.2); /* Параметры тени */
+}
+
+
+
+.system_info_container .info_header{
+    color: var(--color-text-1);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.system_info_container > div > div{
+    padding-top: 10px;
+    color: var(--color-text-1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.system_info_container > div > div > p:first-child{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* TABLE */
+
+.container{
+    display: flex;
+    justify-content: center;
+
+    margin: 20px 10px;
+
+    /* border: 1px solid black; */
+
+    box-shadow: 0 0 10px  rgba(0,0,0,0.2); /* Параметры тени */
+
+    min-width: var(--min-page-width);
+    max-width: var(--min-page-width);
+
+    margin: 10px auto;
+}
+
+.container_mid{
+
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table_caption{
+    display: flex;
+    background-color: #E7E5E3;
+    justify-content: left;
+    height: 54px;
+
+    background-image: url("../images/pattern_2.png");
+    background-size: contain;
+    background-position-x: 30px;
+}
+
+.table_caption h4{
+    margin: auto 0;
+    margin-left: 20px;
+}
+
+.table_container{
+    margin-top: 20px;
+    max-height: 500px;
+
+    max-width: var(--min-page-width);
+    overflow-x: auto;
+}
+
+table{
+    width:100%;
+    table-layout: fixed;
+    border-spacing: 0;
+
+}
+
+thead{
+
+    position: sticky;
+    top: 0;
+    background-color: #E7E5E3;
+    height: 50px;
+}
+
+tr{
+    /* border:1px solid black; */
+    padding: 5px;
+    text-align: center;
+    word-wrap:break-word;
+    /* font-weight: 100; */
+}
+
+
+
+
+
+/* Стили для скролла */
+.users_events_container::-webkit-scrollbar {
+	width: 6px;
+    /* display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em; */
+} 
+ .users_events_container::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+.users_events_container::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
